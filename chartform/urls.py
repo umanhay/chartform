@@ -19,5 +19,6 @@ from form import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^form/', views.form, name='form')
+    url(r'^form/', views.form, name='form'),
+    url(r'^chart/', views.chart, name='chart'),
 ]

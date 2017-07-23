@@ -5,6 +5,9 @@ from django.http import HttpResponse
 
 
 def form(request):
-  path = 'app.js'
-  now = time.time()
-  return render(request, 'form.html', {'component': path, 'time': now})
+  path = 'form.js'
+  return render(request, 'form.html', {'component': path})
+
+def chart(request):
+  path = 'chart.js'
+  return render(request, 'chart.html', {'component': path})
