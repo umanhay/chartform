@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from form import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^form/', views.form, name='form')
 ]
