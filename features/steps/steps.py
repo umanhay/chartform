@@ -27,8 +27,10 @@ def see_component(context):
 
 @then('we see the header Form')
 def see_header_form(context):
-  assert '<h1>Form</h1>' in context.res.text
+  h1 = context.browser.find_element_by_tag_name("h1")
+  assert h1.text == "Form"
 
 @then('we see the header Chart')
 def see_header_chart(context):
-  assert '<h1>Chart</h1>' in context.res.text
+  h1 = context.browser.find_element_by_tag_name("h1")
+  assert h1.text == "Chart"
