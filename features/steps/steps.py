@@ -19,3 +19,7 @@ def load_form(context):
 def see_form(context):
   assert '<form>'in context.res.text
   assert '</form>' in context.res.text
+
+@then('we see a react component')
+def see_component(context):
+  assert "id='react'" in context.res.text

@@ -4,4 +4,4 @@ Feature: main form page
     when we visit /form 
     then we get a successful http response
     and we load valid html
-    and we see a form
+    and we see a react component
